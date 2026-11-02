@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>수우 ♥ 이우 카카오톡 테마</title>
+<meta name="description" content="수우와 이우 사진으로 만든 가족용 카카오톡 테마. 아이폰·안드로이드 둘 다 있어요.">
+<!-- 가족끼리 나누는 페이지라 검색에 나오지 않게 한다 -->
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="수우 ♥ 이우 카카오톡 테마">
+<meta property="og:description" content="눌러서 아이폰·안드로이드에 설치하기">
+<meta property="og:image" content="https://ahcy205.github.io/suwoo-iwoo-theme/img/hero.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FFF8F1">
+<link rel="icon" href="img/icon.png">
+<link rel="apple-touch-icon" href="img/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #FFF8F1; --bg2: #FDEFE8; --card: #FFFFFF; --line: #F0DFD4;
+    --ink: #5A4740; --ink2: #9A8478; --cocoa: #8E6B5B;
+    --pink: #F07F8B; --pink-d: #DC6A77; --pink-l: #FCE3E5; --sky: #7DAAD6; --sky-l: #E3EEF8;
+    --mint-l: #E4F1DF; --butter-l: #FFF1D6;
+    --r: 22px;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: linear-gradient(#FFF8F1, #FDEEEA 60%, #FBE7E8); background-attachment: fixed;
+    color: var(--ink); font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+    word-break: keep-all;
+  }
+  .wrap { max-width: 460px; margin: 0 auto; padding: 20px 16px calc(40px + env(safe-area-inset-bottom)); }
+  .cute { font-family: "Jua", "Apple SD Gothic Neo", sans-serif; font-weight: 400; }
+
+  /* 머리 */
+  .hero { position: relative; border-radius: 28px; overflow: hidden; background: #fff; box-shadow: 0 10px 30px rgba(142, 107, 91, .14); }
+  .hero img { display: block; width: 100%; height: auto; }
+  .hero .badge { position: absolute; left: 14px; top: 14px; background: rgba(255,255,255,.92); color: var(--cocoa);
+    border: 2px solid var(--cocoa); border-radius: 999px; padding: 2px 12px; font-size: 14px; }
+  h1 { margin: 22px 0 4px; font-size: 32px; line-height: 1.2; text-align: center; color: var(--ink); }
+  h1 .s { color: var(--pink); } h1 .i { color: var(--sky); } h1 .h { color: var(--pink); font-size: .8em; }
+  .lead { margin: 0 0 22px; text-align: center; color: var(--ink2); }
+
+  /* 기기 고르기 */
+  .seg { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; background: #fff; border: 2px solid var(--line);
+    border-radius: 999px; margin-bottom: 16px; }
+  .seg button { appearance: none; border: 0; background: transparent; color: var(--ink2); padding: 10px 0; border-radius: 999px;
+    font: inherit; font-family: "Jua", sans-serif; font-size: 18px; cursor: pointer; }
+  .seg button[aria-selected="true"] { background: var(--pink); color: #fff; box-shadow: 0 3px 0 var(--pink-d); }
+  .seg button:focus-visible, .btn:focus-visible, .link:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; }
+
+  .card { background: var(--card); border: 2px solid var(--cocoa); border-radius: var(--r); padding: 20px 18px; margin-bottom: 14px; position: relative; }
+  .card h2 { margin: 0 0 6px; font-size: 22px; color: var(--ink); }
+  .card p { margin: 6px 0; }
+  .muted { color: var(--ink2); font-size: 14px; }
+
+  .btn { display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; min-height: 56px; margin: 14px 0 4px;
+    border: 2px solid var(--cocoa); border-radius: 999px; background: var(--pink); color: #fff; text-decoration: none;
+    font-family: "Jua", sans-serif; font-size: 20px; cursor: pointer; box-shadow: 0 4px 0 var(--cocoa); transition: transform .08s, box-shadow .08s; }
+  .btn:active { transform: translateY(3px); box-shadow: 0 1px 0 var(--cocoa); }
+  .btn.sky { background: var(--sky); }
+  .btn.ghost { background: #fff; color: var(--cocoa); }
+  .link { color: var(--cocoa); font-size: 14px; }
+  .center { text-align: center; }
+
+  ol.steps { list-style: none; padding: 0; margin: 12px 0 0; counter-reset: s; }
+  ol.steps > li { counter-increment: s; position: relative; padding: 2px 0 14px 40px; }
+  ol.steps > li::before { content: counter(s); position: absolute; left: 0; top: 0; width: 28px; height: 28px; border-radius: 50%;
+    background: var(--pink-l); color: var(--pink-d); font-family: "Jua", sans-serif; text-align: center; line-height: 28px; }
+  ol.steps > li b { color: var(--ink); }
+  .path { display: inline-block; background: var(--butter-l); border-radius: 8px; padding: 0 6px; font-size: 15px; }
+
+  .note { background: var(--mint-l); border-radius: 14px; padding: 12px 14px; font-size: 14px; margin-top: 10px; }
+  .warn { background: var(--butter-l); border-radius: 14px; padding: 12px 14px; font-size: 15px; margin-top: 10px; }
+  .done { display: none; background: var(--sky-l); border-radius: 14px; padding: 12px 14px; font-size: 15px; margin-top: 10px; }
+  .done.show { display: block; }
+  [hidden] { display: none !important; }
+
+  /* 미리보기 */
+  .shots { display: grid; grid-auto-flow: column; grid-auto-columns: 46%; gap: 12px; overflow-x: auto; scroll-snap-type: x mandatory;
+    padding: 4px 2px 14px; -webkit-overflow-scrolling: touch; }
+  .shots figure { margin: 0; scroll-snap-align: start; }
+  .shots img { width: 100%; height: auto; border-radius: 18px; border: 2px solid var(--line); display: block; background: #fff; }
+  .shots figcaption { text-align: center; font-size: 14px; color: var(--ink2); margin-top: 6px; }
+  h3 { font-size: 20px; margin: 26px 0 10px; text-align: center; }
+
+  footer { text-align: center; color: var(--ink2); font-size: 13px; margin-top: 26px; }
+  @media (prefers-reduced-motion: reduce) { .btn { transition: none; } }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div class="hero">
+    <img src="img/hero.jpg" width="720" height="760" alt="구름 위에 나란히 앉은 수우와 이우">
+    <span class="badge cute">카톡 테마</span>
+  </div>
+  <h1 class="cute"><span class="s">수우</span> <span class="h">♥</span> <span class="i">이우</span></h1>
+  <p class="lead">우리 두 조카와 함께하는 카카오톡</p>
+
+  <div class="seg" role="tablist" aria-label="휴대폰 고르기">
+    <button role="tab" id="tab-ios" aria-controls="ios" aria-selected="true">아이폰</button>
+    <button role="tab" id="tab-android" aria-controls="android" aria-selected="false">안드로이드</button>
+  </div>
+
+  <!-- 아이폰 -->
+  <section id="ios" role="tabpanel" aria-labelledby="tab-ios">
+    <!-- 카카오톡 안에서 열었을 때: 파일 주소로 가면 카톡이 받아서 바로 설치한다 -->
+    <div class="card" id="ios-kakao" hidden>
+      <h2 class="cute">바로 설치하기</h2>
+      <p>아래 단추를 누르면 카카오톡이 <b>"테마 다운로드 완료"</b>를 띄워요.</p>
+      <a class="btn" href="files/suwoo-iwoo.ktheme">테마 설치</a>
+      <ol class="steps">
+        <li>단추를 누르고 <b>"테마 다운로드 완료"</b>가 뜨면 끝</li>
+        <li>카카오톡 <span class="path">더보기 → 설정(⚙) → 테마</span>에서 <b>우리 두 조카</b>를 골라요</li>
+      </ol>
+    </div>
+    <!-- 사파리 등: 카톡으로 링크를 보내고, 채팅방에서 누르면 위의 길로 설치된다 -->
+    <div class="card" id="ios-web">
+      <h2 class="cute">카카오톡으로 보내서 설치</h2>
+      <p>아이폰 테마는 <b>카카오톡 안에서</b> 열어야 설치돼요.</p>
+      <button class="btn" id="ios-share" type="button">카카오톡으로 보내기</button>
+      <div class="done" id="ios-share-done" role="status">보냈어요. 채팅방에서 링크를 누르면 설치돼요.</div>
+      <ol class="steps">
+        <li>단추를 누르고 공유 목록에서 <b>카카오톡</b>을 골라요</li>
+        <li><b>나와의 채팅</b>(아무 채팅방이나 괜찮아요)으로 보내요</li>
+        <li>채팅방에서 보낸 링크를 누르면 <b>"테마 다운로드 완료"</b></li>
+        <li><span class="path">더보기 → 설정(⚙) → 테마</span>에서 <b>우리 두 조카</b>를 골라요</li>
+      </ol>
+      <p class="center"><a class="link" href="files/suwoo-iwoo.ktheme" download>공유가 안 되면 파일로 받기</a></p>
+    </div>
+  </section>
+
+  <!-- 안드로이드 -->
+  <section id="android" role="tabpanel" aria-labelledby="tab-android" hidden>
+    <!-- 카카오톡 안에서는 .apk 를 받을 수 없다 -->
+    <div class="card" id="and-kakao" hidden>
+      <h2 class="cute">다른 브라우저로 열어 주세요</h2>
+      <p>카카오톡 안에서는 안드로이드 테마 파일을 받을 수 없어요. <b>크롬</b>이나 <b>삼성 인터넷</b>으로 열어 주세요.</p>
+      <a class="btn sky" id="and-open" href="#">다른 브라우저로 열기</a>
+      <button class="btn ghost" id="and-copy" type="button">이 페이지 주소 복사</button>
+      <div class="done" id="and-copy-done" role="status">복사했어요. 크롬이나 삼성 인터넷 주소창에 붙여 넣어요.</div>
+    </div>
+    <div id="and-web">
+      <div class="card">
+        <h2 class="cute">받기 전에 두 가지만</h2>
+        <p>이 테마는 <b>권한을 하나도 요구하지 않는</b> 그림과 색 모음이에요. 그래도 안드로이드는 플레이스토어 밖에서 받은 앱을 막아서, 잠깐 허용해야 해요.</p>
+        <ol class="steps">
+          <li><b>삼성 갤럭시라면</b> 보안 위험 자동 차단을 잠깐 꺼요<br>
+            <span class="path">설정 → 보안 및 개인정보 보호 → 보안 위험 자동 차단 → 끔</span><br>
+            <span class="muted">요즘 갤럭시는 처음부터 켜져 있어요. 켜져 있으면 2번을 해도 설치가 막혀요.</span></li>
+          <li>지금 쓰는 브라우저에 <b>출처를 알 수 없는 앱 설치</b>를 허용해요<br>
+            <span class="path">설정 → 보안 및 개인정보 보호 → 기타 보안 설정 → 출처를 알 수 없는 앱 설치</span><br>
+            <span class="muted">목록에서 이 페이지를 연 브라우저(크롬 · 삼성 인터넷)를 골라 켜요.</span></li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2 class="cute">받아서 설치</h2>
+        <a class="btn" href="files/suwoo-iwoo.apk" download>테마 파일 받기</a>
+        <p class="muted center">약 2.5MB</p>
+        <ol class="steps">
+          <li>받은 파일을 눌러 <b>설치</b></li>
+          <li>카카오톡 <span class="path">더보기 → 설정(⚙) → 테마</span>에서 <b>우리 두 조카</b>를 골라요</li>
+        </ol>
+        <div class="warn"><b>설치가 끝나면 보안 위험 자동 차단을 다시 켜 주세요.</b> 1번에서 껐다면 같은 자리에서 다시 켜면 돼요.</div>
+      </div>
+    </div>
+  </section>
+
+  <h3 class="cute">이렇게 바뀌어요</h3>
+  <div class="shots">
+    <figure><img src="img/chat.jpg" width="414" height="896" alt="채팅방: 말풍선 위에 엎드린 조카와 쪽쪽이" loading="lazy"><figcaption>채팅방</figcaption></figure>
+    <figure><img src="img/lock.jpg" width="414" height="896" alt="잠금화면: 웃는 두 조카, 비밀번호를 누르면 얼굴이 떠요" loading="lazy"><figcaption>잠금화면</figcaption></figure>
+    <figure><img src="img/friends.jpg" width="414" height="896" alt="친구 목록: 조카 얼굴 무늬와 기본 프로필" loading="lazy"><figcaption>친구 목록</figcaption></figure>
+    <figure><img src="img/splash.jpg" width="414" height="897" alt="실행화면: 구름 위의 수우와 이우" loading="lazy"><figcaption>실행화면 (안드로이드)</figcaption></figure>
+  </div>
+  <p class="muted center">미리보기라 실제 카톡 화면과 배치가 조금 다를 수 있어요.</p>
+
+  <footer>가족끼리만 나눠 주세요 · 버전 1.0.0</footer>
+</main>
+
+<script>
+(function () {
+  var ua = navigator.userAgent || '';
+  var isKakao = /KAKAOTALK/i.test(ua);
+  var isAndroid = /Android/i.test(ua);
+  var tabs = { ios: document.getElementById('tab-ios'), android: document.getElementById('tab-android') };
+  var panels = { ios: document.getElementById('ios'), android: document.getElementById('android') };
+
+  function show(which) {
+    ['ios', 'android'].forEach(function (k) {
+      var on = k === which;
+      tabs[k].setAttribute('aria-selected', on ? 'true' : 'false');
+      panels[k].hidden = !on;
+    });
+  }
+  tabs.ios.addEventListener('click', function () { show('ios'); });
+  tabs.android.addEventListener('click', function () { show('android'); });
+  show(isAndroid ? 'android' : 'ios');
+
+  var base = location.href.split('#')[0].split('?')[0].replace(/[^/]*$/, '');
+  var kthemeUrl = base + 'files/suwoo-iwoo.ktheme';
+
+  // 아이폰: 카톡 안이면 바로 설치, 아니면 카톡으로 보내기
+  if (isKakao) {
+    document.getElementById('ios-kakao').hidden = false;
+    document.getElementById('ios-web').hidden = true;
+  }
+  document.getElementById('ios-share').addEventListener('click', function () {
+    var done = document.getElementById('ios-share-done');
+    if (navigator.share) {
+      navigator.share({ title: '수우 ♥ 이우 카톡 테마', text: '누르면 테마가 설치돼요', url: kthemeUrl })
+        .then(function () { done.classList.add('show'); })
+        .catch(function () {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(kthemeUrl).then(function () {
+        done.textContent = '링크를 복사했어요. 카카오톡 나와의 채팅에 붙여 넣고 눌러 주세요.';
+        done.classList.add('show');
+      });
+    } else {
+      location.href = kthemeUrl;
+    }
+  });
+
+  // 안드로이드: 카톡 안에서는 .apk 를 못 받으니 밖의 브라우저로
+  if (isKakao) {
+    document.getElementById('and-kakao').hidden = false;
+    document.getElementById('and-web').hidden = true;
+    document.getElementById('and-open').href = 'kakaotalk://web/openExternal?url=' + encodeURIComponent(base);
+  }
+  document.getElementById('and-copy').addEventListener('click', function () {
+    var done = document.getElementById('and-copy-done');
+    var copy = navigator.clipboard ? navigator.clipboard.writeText(base) : Promise.reject();
+    copy.then(function () { done.classList.add('show'); }, function () {
+      done.textContent = '주소: ' + base;
+      done.classList.add('show');
+    });
+  });
+})();
+</script>
+</body>
+</html>
